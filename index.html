@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" class="css">
+    <link rel="stylesheet" href="css/estilos-cv.css" class="css">
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+
+    <div class="header text-muted">
+        <div class="row">
+            <div class="col-2 foto">
+                <img src="img/fotoPerfil.jpg" alt="Foto Perfil">
+            </div>
+
+            <div class="col-10 pl-0">
+                <h1>Jonathan Tazzioli</h1>
+                <h4>Desarrollador Full Stack</h4>
+                <p>Desarrollador/a Full Stack con experiencia en el desarrollo de aplicaciones web escalables 
+                    y seguras. Busco oportunidades desafiantes para seguir creciendo en mi carrera y aprender 
+                    nuevas tecnologías.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-personal text-muted">
+        <ul>
+            <li><strong>Email: </strong>jonathan.tazzioli@gmail.com</li>
+            <li><strong>Direccion: </strong>Bartolome Mitre, 1678 Caseros, Buenos Aires, Argentina</li>
+            <li><strong>Telefono: </strong>(+54) 11 4936 2320</li>
+            <li><strong>Celular: </strong>(+54) 11 6113 0592</li>
+            <li><strong>Fecha de nacimiento: </strong>05 nov 1992</li>
+            <li><strong>Nacionalidad: </strong>Argentina</li>
+            <li><strong>Enlace: </strong><a href="www.linkedin.com/in/jonathan-tazzioli-a0018859">linkedin.com/jonathantazzioli</a></li>
+        </ul>
+    </div>
+
+    <div class="info-cv text-muted">
+        
+        <div class="row experiencia">
+            <h2>Experiencia 
+                <button id="agregar" class="añadir btn btn-primary">+</button>
+                <button id="cancel" class="cancelar btn btn-danger" style="display: none;">X</button>
+            </h2>
+            <hr>
+
+            <form id="agregarDatos" style="display: none;">
+                <label for="antiguedad">Fecha inicio - Termino</label>
+                <input type="text" id="antiguedad">
+
+                <label for="puesto">Puesto</label>
+                <input type="text" id="puesto">
+                
+                <label for="tareas">Descripcion de tareas</label>
+                <textarea name="descripcion" id="tareas" cols="30" rows="1"></textarea>
+
+                <button id="confirmarDatos" class="btn btn-success">Confirmar</button>
+            </form>
+
+            <div class="row experiencia" id="trabajoAgregado"></div>
+
+            <div class="col-3 antiguedad">
+                <p>Mar 2015 - Nov 2020</p>
+            </div>
+
+            <div class="col-9 descripcion">
+                <h3>Analista de control de calidad</h3>
+                <p><strong>Laboratorio Ejercito Argentino</strong> Buenos Aires, Argentina</p>
+                <p>Analista de Control de Calidad en Laboratorio del Ejercito Argentino 
+                    destinado a los productos textiles, cueros y calzados bajo normas 
+                    ISO, IRAM y AACTM, confección y perfeccionamiento de 
+                    especificaciones técnicas, recepción y muestreo.</p>
+            </div>
+
+            <div class="col-3 antiguedad">
+                <p>Nov 2012 - Nov 2013</p>
+            </div>
+
+            <div class="col-9 descripcion">
+                <h3>Ejecutivo Dpto. Medio Ambiente</h3>
+                <p><strong>Industria & Ambiente S.A.</strong> Buenos Aires, Argentina</p>
+                <p>Administrativo en sector medioambiente para creacion de documentacion y todo tipo 
+                    de gestoria medioambiental como Efluentes Gaseosos, Recursos Hidricos, 
+                    Seguridad e Higiene, entre otros.</p>
+            </div>
+
+            <div class="col-3 antiguedad">
+                <p>Abr 2012 - Nov 2012</p>
+            </div>
+
+            <div class="col-9 descripcion">
+                <h3>Analista y Elaborador</h3>
+                <p><strong>Laborit</strong> Buenos Aires, Argentina</p>
+                <p>Elaborador y Analista de productos medicinales y 
+                    cosméticos: titulaciones, identificación de reactivos; control 
+                    microbiológico de productos medicinales: esterilización en autoclave, 
+                    sembrado, recuento en placa, identificación de bacterias, preparación de medios de cultivo. Recepción 
+                    y control de materias primas, análisis de producto terminado. 
+                    Análisis bajo normas GMP.</p>
+            </div>
+
+        </div>
+
+        <div class="row educacion">
+            <h2>Educación</h2>
+            <hr>
+
+            <div class="col-3 antiguedad">
+                <p>Jun 2010 - Mar 2017</p>
+            </div>
+
+            <div class="col-9 descripcion">
+                <h3>Programador Java OOP / MySQL ER</h3>
+                <p><strong>Plan 111mil Gobierno Nacional</strong> Buenos Aires, Argentina</p>
+                <p>Programación en entorno NetBeans del lenguaje Java orientado a objeto, 
+                    conexión a base de datos MySQL y la manipulación de los datos por medio de una API 
+                    (lenguaje Java) y la creación de estás bases de datos con un modelo entidad relación.</p>
+            </div>
+
+            <div class="col-3 antiguedad">
+                <p>Mar 2009 - Mar 2011</p>
+            </div>
+
+            <div class="col-9 descripcion">
+                <h3>Técnico Químico</h3>
+                <p><strong>E.T. Nº27 Hipolito Yrigoyen</strong> Buenos Aires, Argentina</p>
+                <p>Escuela Tecnica con especializacion en Química.</p>
+            </div>
+
+            <span id="contenido-adicional" style="display: none;">
+                <div class="col-3 antiguedad">
+                    <p>Mar 2012 - Mar 2015</p>
+                </div>
+    
+                <div class="col-9 descripcion">
+                    <h3>Lic. en Biotecnologia</h3>
+                    <p><strong>Universidad Nacional de General San Martín</strong> Buenos Aires, Argentina</p>
+                    <p>15 materias completadas.</p>
+                </div>
+            </span>
+
+            <a href="#" id="enlace-ver-mas" class="btn btn-primary">Ver más</a>
+        </div>
+
+        <div class="row mt-2">
+            
+            <div class="col-3 idiomas">
+                <h2>Idiomas</h2>
+                <hr>
+
+                <h3><strong>Francés</strong></h3>
+                <p>Nivel avanzado. Certificado de francés avanzado</p>
+
+                <h3><strong>Inglés</strong></h3>
+                <p>Nivel avanzado. Certificado de inglés avanzado</p>
+
+                <h3><strong>Italiano</strong></h3>
+                <p>Nivel avanzado. Certificado de italiano avanzado</p>
+            </div>
+
+            <div class="col-9 habilidades">
+                <h2>Habilidades
+                    <button id="masHab" class="añadir btn btn-primary">+</button>
+                    <button id="cancelHab" class="cancelar btn btn-danger" style="display: none;">X</button>
+                </h2>
+                <hr>
+
+                <p>Atencion al cliente y ventas</p>
+                <p>Lenguajes: HTML, CSS, JavaScript, Php, Java</p>
+                <p>Bases de datos: MySQL.</p>
+                <p>SEO</p>
+                <p>Marketing Digital, Afiliados</p>
+                <p>Herramientas de control de versiones: Git, GitHub.</p>
+                <p>Frameworks y librerías: jQuery, Bootstrap.</p>
+                <div id="nuevaHab"></div>
+
+                <form id="agregarHab" style="display: none;">
+                    <label for="habilidad">Ingrese nueva habilidad o conocimiento</label>
+                    <br>
+                    <input type="text" id="habilidad">
+    
+                    <button id="confirmarHab" class="btn btn-success">Confirmar</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="js/botones.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

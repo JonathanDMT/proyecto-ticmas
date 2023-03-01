@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: #c1dee7;
+    padding: 50px;
+}
+
+.foto img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.info-personal {
+    background: #e4e5e6;
+    padding: 25px;
+}
+
+.info-cv {
+    padding: 55px;
+}
+
+h2 {
+    color: blue;
+}
+
+.añadir {
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+
+.cancelar{
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+
+.antiguedad, .descripcion {
+    margin-bottom: 10px;
+}
+
+#agregarDatos {
+    margin-bottom: 25px;
+}
